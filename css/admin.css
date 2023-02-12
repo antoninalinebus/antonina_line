@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 208px;
+    background-color: #198754;
+    position: absolute;
+    height: 100%;
+    overflow: auto;
+}
+.sidebar a {
+    display: block;
+    color:aliceblue;
+    padding: 25px;
+    text-decoration: none;
+}
+.sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+div.right-content {
+    margin-left: 200px;
+    padding: 30px;
+}
+@media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.right-content {margin-left: 0;}
+}
+@media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+}
+.right-content {
+    border-collapse: collapse;
+    border-spacing: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;            
+    /* border: 1px solid #ddd; */
+    }
+.right-content table{
+    /* border: 1px solid  black; */
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+.right-content table tr th{
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+}
+.right-content table tr td{
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+}
+.right-content tr:hover{
+    background-color:#198754;
+    color: white;
+}
+.right-content table #add{
+    color:blue;
+    
+}
+.right-content button{
+    border: none;
+    background: none;
+}
+.right-content #del{
+    color: rgb(242, 67, 67);
+}
+.right-content table #edit{
+    color: black;
+} 
+.right-content  th, td {
+text-align: left;
+padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+    
+
+
+
+  
+        
